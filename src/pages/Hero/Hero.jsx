@@ -1,5 +1,5 @@
 
-import profileImg from '../../assets/Untitled design (4).png'
+import profileImg from '../../assets/profile.png'
 import './hero.css'
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
@@ -15,9 +15,11 @@ const Hero = () => {
 
 
                     <div className="  pt-6">
+                        <a href="#contact">
                         <button className="hero-button" >
                                 Hire Me
                         </button >
+                        </a>
                     </div>
 
 
