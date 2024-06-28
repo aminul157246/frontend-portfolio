@@ -1,0 +1,16 @@
+.up-down-animation{
+    animation: infiniteUpDown 3s infinite ease;
+    transition: all 3s;
+}
+
+@keyframes infiniteUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

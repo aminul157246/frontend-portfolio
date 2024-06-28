@@ -1,0 +1,67 @@
+h1{
+    color: transparent;
+    -webkit-text-stroke: 3px #29A587 ;
+    position: relative;
+}
+
+h1::before{
+    content: 'AMINUL ISLAM';
+    position: absolute; 
+    z-index: 1;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color : #29A587; 
+    border-right: 8px solid #29A587;
+    transition: 1s ease-in-out;
+}
+
+h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 50px #29A587 );
+}
+
+
+.profile {
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: 0 0 50px  #29A587;
+}
+
+
+
+
+
+
+
+.up-down-animation{
+    animation: infiniteUpDown 3s infinite ease;
+    transition: all 3s;
+}
+
+@keyframes infiniteUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translateY(-100px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateY(-100px) rotate(-360deg);
+    }
+  }
+  
+  .rotate-circle {
+    animation: rotate 10s linear infinite; /* Adjust animation duration as needed */
+  /* } */
